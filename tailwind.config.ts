@@ -8,11 +8,18 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "auth_bg": "url('/images/auth_bg.jpg')",
+        "home_bg": "url('/images/home-bg.webp')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['var(--font-lato)', 'sans-serif'],
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 } satisfies Config;
